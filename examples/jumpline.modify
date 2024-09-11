@@ -1,0 +1,9 @@
+println #7
+jumpline jumphere
+println #8
+:jumphere
+println #7
+exit
+
+This will be printed.
+This won't be printed.

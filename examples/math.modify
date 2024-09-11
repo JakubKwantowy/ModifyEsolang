@@ -1,0 +1,17 @@
+setreg b 3
+setreg c 2
+
+addreg a b c
+println a
+
+subreg a b c
+println a
+
+mulreg a b c
+println a
+
+divreg a b c
+println a
+
+sqrtreg a 5
+println a

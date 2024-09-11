@@ -1,0 +1,9 @@
+println #7 
+setline 7 #8
+println #7
+setline 7 #-1
+println #7
+exit
+
+String 1
+String 2

@@ -1,0 +1,7 @@
+setreg a data
+addreg a a 1
+println #a
+exit
+
+:data
+Hello World!

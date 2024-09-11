@@ -1,0 +1,8 @@
+print #6
+inputline 8
+print #7
+println #8
+exit
+
+What's your name? 
+Hello, 

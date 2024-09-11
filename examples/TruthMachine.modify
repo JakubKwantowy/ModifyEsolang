@@ -1,0 +1,7 @@
+inputline 7
+conditional #7 0 eq 4 #6
+:loop
+println #7
+jumpline loop
+
+exit

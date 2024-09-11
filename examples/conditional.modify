@@ -1,0 +1,6 @@
+conditional 1 2 less 4 #5
+println #4
+exit
+
+False
+True
