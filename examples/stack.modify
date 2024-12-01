@@ -1,0 +1,17 @@
+setreg a 1
+println a
+
+pushreg a
+setreg a 2
+pushreg a
+setreg a 3
+println a
+
+peekreg a
+println a
+
+popreg a
+println a
+
+popreg a
+println a
