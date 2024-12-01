@@ -34,6 +34,35 @@ Argument Types:
 Registers are a quick way to store Integer Values and do mathematical operations on them.  
 Supported Registers are: `a, b, c, d`
 
+### Evaluation
+
+Evaluations are used for efficient representation of data in Modify.  
+There are multiple types of evaluation. All of them are Listed here:  
+&emsp;Integer: Results in the Literal value of an integer being returned.  
+&emsp;Regster: Results in the value of a given register being returned.  
+&emsp;# + Integer: Results in the value of a given line being returned.  
+&emsp;# + Register: Results in the value of a line pointed at by a given register being returned.  
+&emsp;Label: Results in the Line number of a Label being returned.  
+If an evaluation has to convert a string to an integer (like when setting registers or integer conditionals) it will do one of two things:
+If the string is numeric (a decimal number in string form), it will be directly converted to an integer. Otherwise, it will take the string's length.
+
+### Labels
+
+Labels are lines that consist of a colon followed by a name.  
+Labels can be Read by an Evaluation, returning with the line number of the Label.  
+Labels are only parsed at the beginning of runtime, meaning that if you change the contents of a label's line, the label will not be affected.
+
+### The Stack
+
+The stack is used for additional storage of integer values.  
+The registers can be Pushed, Popped and Peeked off and onto the Stack.  
+For string storage on the stack, line numbers can be used.
+
+### The Verbose (-v) flag
+
+The Modify interpreter can be run with the -v flag, which turns on Verbose Mode.  
+In Verbose Mode, extra debug information is printed to the Console.
+
 Here is a list of all implemented Commands:
 
 ### print
